@@ -16,6 +16,9 @@ const StateContext = createContext();
 
     // Use state to know which icon is clicked, Chat, cart, profile notification..
     const [isClicked, setIsClicked] = useState(initializeState)
+   
+    // useState for sreensize
+    const [screenSize, setScreenSize] = useState(undefined);
 
     const handleClick = (clicked) => {
         setIsClicked({...initializeState, [clicked]:true});
@@ -29,6 +32,8 @@ const StateContext = createContext();
             isClicked,
             setIsClicked,
             handleClick,
+            screenSize,
+            setScreenSize,
         }}
         >
             {children}
