@@ -1,8 +1,23 @@
 import React from 'react'
+import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-react-charts'
 
-const SparkLine = () => {
+const SparkLine = ({id, height, width, color, data, type, currentColor }) => {
   return (
-    <div>SparkLine</div>
+    <SparklineComponent
+    id={id}
+    height={height}
+    width={width}
+    lineWidth={1}
+    fill={color}
+    valueType="Numeric"
+    border={{color:currentColor, width: 2}}
+    dataSource={data}
+    xName="x"
+    yName="y"
+    type={type}
+    >
+      <Inject services={[SparklineTooltip]} />
+    </SparklineComponent>
   )
 }
 

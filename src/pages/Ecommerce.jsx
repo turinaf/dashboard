@@ -100,7 +100,7 @@ const Ecommerce = () => {
 
                            {/* Graphs */}
                            
-                           <div className='mt-5'>
+                           {/* <div className='mt-5'>
                             <SparkLine
                             currentColor="blue" 
                             id="line-sparkline"
@@ -110,7 +110,7 @@ const Ecommerce = () => {
                             data={SparklineAreaData}
                             color="blue"
                             />
-                           </div>
+                           </div> */}
 
                         </div>
                   </div>
